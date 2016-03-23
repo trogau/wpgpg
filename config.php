@@ -1,3 +1,3 @@
 <?php
 
-define('GPG_HOME_DIR', '/www/trog.qgl.org/.gnupg');
+define('GPG_HOME_DIR', '/var/www/.gnupg');
