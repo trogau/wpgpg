@@ -53,7 +53,7 @@ function get_user()
 
 		add_filter('final_output', function($output) {
 			global $current_user;
-			$cmd = "/usr/bin/gpg --homedir ".GPG_HOME_DIR." --armor --batch -e -r '$current_user->user_email'";
+			$cmd = GPG_BIN." --homedir ".GPG_HOME_DIR." --armor --batch -e -r '$current_user->user_email'";
 			$crypted = encrypt_command($cmd, $output);
 			return "<html><div id='decryptbtn'></div><br /><div id='crypted' style='white-space:pre;font-family:monospace;font-size:11px;width:500px;border:dotted 2px black; height:200px;overflow:auto'>$crypted</div></html>";
 		});
