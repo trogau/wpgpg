@@ -16,7 +16,7 @@ Note: if you're logged in into the site (including into /wp-admin) and enable th
 ## Installation
 
 1. Install plugin as usual
-2. Edit config.php and put your GPG home dir (i.e., the directory which contains the GPG keyring you want to use - see below) in GPG_HOME_DIR.
+2. Edit config.php and put your GPG home dir (i.e., the directory which contains the GPG keyring you want to use - see below) in GPG_HOME_DIR, and your GPG binary location (GPG_BIN).
 3. Set up the browser plugin so you can decrypt the content.
 4. Activate the plugin, if you dare. 
 
