@@ -4,7 +4,9 @@ This plugin GPG-encrypts all content for any users that are logged in to the Wor
 
 Note: if you're logged in into the site (including into /wp-admin) and enable this plugin, every page will be GPG encrypted, and thus totally unusable without a means to decrypt. Don't lock yourself out. 
 
-WARNING: this is a proof-of-concept; has not been thoroughly tested. May not be secure. 
+### WARNINGS
+- this is a proof-of-concept; has not been thoroughly tested. May not be secure. 
+- does NOT encrypt anything you send to the server - only encrypts the output from WordPress.
 
 # Requirements
 
