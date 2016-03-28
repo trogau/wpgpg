@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * PGP_ENCRYPT_MODE
+ *
+ * Can be either 'gpg' or 'openpgp-php'. 
+ * If 'gpg', the GPG binary needs to be installed per the below and the keys need to be added to the web server
+ * user's keyring. 
+
+ * If openpgp-php, OpenPGP-PHP needs to be installed and configured. 
+ *
+ */  
+define('PGP_ENCRYPT_MODE', 'openpgp-php');
+
 define('GPG_HOME_DIR', '/var/www/.gnupg');
 
 define('GPG_BIN', '/usr/bin/gpg');
+
